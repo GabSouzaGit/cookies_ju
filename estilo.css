@@ -1,5 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
+/* Importando Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap'); /* Rancho */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Poppins */
+
+* {
+    font-family: "Poppins", serif;
     margin: 0;
 }
 
@@ -10,28 +14,28 @@ header {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 30px 50px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
   display: flex;
+  gap: 4rem;
   align-items: center;
   margin: 0;
 }
 
 .logo figcaption {
     color: #7a5e3a;
-    font-size: 30px;
+    font-size: 6rem;
     margin: 0;
-    font-family: serif;
-    font-weight: bold;
+    font-family: "Rancho", cursive;
+    font-weight: 400;
     margin: 15px;
 }
   
 .logo img {
-  height: 70px;
+  height: 120px;
   max-width: 100%;
 }
 
@@ -45,7 +49,7 @@ header {
 #nav-header a {
   text-decoration: none;
   color: #555;
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: bold;
   padding: 5px 30px;
   transition: all 0.5s ease;
@@ -92,7 +96,7 @@ header {
 
 #whatsapp a i {
     font-size: 50px;
-    transform: translateY(-2px);
+    transform: translateY(-10px);
     color: #fff;
 }
 
@@ -100,32 +104,33 @@ header {
 
 /* -- GEOVANI -- */
 
-#sobre {
-    margin: 30px; 
+
+#sobre, #alto, #baixo {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#alto, #baixo {
+    flex-direction: row;
+    padding: 0 15%;
+}
+
+#sobre {
+    margin: 5rem;
+    display: flex;
     flex-direction: column;
 }
 
-#sobre div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-#sobre #baixo {
+#baixo {
     flex-direction: row-reverse;
 }
 
 figure .bola {
-    width: 100%;
-    max-width: 300px;
+    width: 20rem;
     border-radius: 50%;
     background-color: hsl(0, 0%, 70%);
-    background-size: cover;
     background-position: center;
 }
 
@@ -139,7 +144,6 @@ figure .bola {
 
 .conteudo {
     color: #333;
-    max-width: 400px;
 }
 
 .conteudo h1 {
@@ -151,10 +155,11 @@ figure .bola {
 /* -- MARIO -- */
 
 #rodape-principal {
-    background-color: #463420;
+    background-color: #463421;
     color: #fff;
     text-align: center;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #rodape-principal figure {
@@ -165,18 +170,19 @@ figure .bola {
     height: 100px;
 }
 
-#rodape-principal section {
+#rodape-principal #info{
     padding: 50px 30px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-#rodape-principal footer {
-    display: flex;
-    justify-content: center;
-    background: #9f876d;
+.copyright {
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background: #745C42;
+    padding: 10px 0;
 }
 
 #social-links {
