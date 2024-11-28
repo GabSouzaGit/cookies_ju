@@ -7,6 +7,11 @@
     margin: 0;
 }
 
+#sobre {
+    color: #333;
+}
+
+
 /* -- TIAGO -- */
 
 header {
@@ -68,8 +73,54 @@ header {
 
 /* -- */
 
-/* -- GABRIEL -- https://api.whatsapp.com/send?phone=5511973042929 */
+/* -- GEOVANI -- */
 
+#alto, #baixo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+#sobre {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#baixo {
+    flex-direction: row-reverse;
+}
+
+figure .bola {
+    width: 20rem;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 70%);
+    background-position: center;
+}
+
+#sobre #alto figure .bola {
+    box-shadow: 16px 10px 0px #9f876d;
+}
+
+#sobre #baixo figure .bola {
+    box-shadow: -16px 10px 0px #463420;
+}
+
+#sobre article {
+    width: 100%;
+    max-width: 50%;
+}
+
+#sobre article h2 {
+    margin-bottom: 20px;
+}
+
+/* -- */
+
+/* -- GABRIEL -- */
 #whatsapp {
     height: 90px;
     width: 90px;
@@ -100,54 +151,58 @@ header {
     color: #fff;
 }
 
-/* -- */
-
-/* -- GEOVANI -- */
-
-
-#sobre, #alto, #baixo {
+#slider {
     display: flex;
-    justify-content: center;
+    max-height: max-content;
+    overflow-x: scroll;
+}
+
+#slider .card {
+    padding: 40px;
+    min-width: 100vw;
+    display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
-#alto, #baixo {
-    flex-direction: row;
-    padding: 0 15%;
+#slider .card div {
+    height: 100%;
 }
 
-#sobre {
-    margin: 5rem;
+#slider .card #cookie, #slider .card #descricao {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#baixo {
-    flex-direction: row-reverse;
+#slider .card #descricao {
+    width: 100%;
+    max-width: 400px;
+    flex-grow: 1;
 }
 
-figure .bola {
-    width: 20rem;
-    border-radius: 50%;
-    background-color: hsl(0, 0%, 70%);
-    background-position: center;
+#slider .card #cookie figure img {
+    height: 400px;
+    border-radius: 5px;
 }
 
-#sobre #alto figure .bola {
-    box-shadow: 16px 10px 0px #9f876d;
-}
-
-#sobre #baixo figure .bola {
-    box-shadow: -16px 10px 0px #463420;
-}
-
-.conteudo {
-    color: #333;
-}
-
-.conteudo h1 {
+#slider .card #cookie h1 {
     font-size: 30px;
+}
+
+#chocolatudo {
+    background: hsl(30, 100%, 10%);
+}
+
+#churros {
+    background: hsl(40, 100%, 30%);
+}
+
+#chocolatudo, #churros {
+    color: #fff;
 }
 
 /* -- */
@@ -202,9 +257,14 @@ figure .bola {
     transform: translateX(5px);
 }
 
-@media (max-width: 675px) {
+@media (max-width: 910px) {
     .separador {
         display: none;
+    }
+    
+    #sobre article {
+        justify-content: center;
+        max-width: 90%;
     }
 
     header {
