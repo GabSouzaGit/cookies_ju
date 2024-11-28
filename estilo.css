@@ -157,9 +157,21 @@ figure .bola {
     overflow-x: scroll;
 }
 
+#slider::-webkit-scrollbar {
+    background: #463421;
+}
+
+#slider::-webkit-scrollbar-thumb {
+    background: #fff;
+    border: 3px solid #463421;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 #slider .card {
+    height: 100%;
     padding: 40px;
-    min-width: 100vw;
+    min-width: 90vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -176,6 +188,8 @@ figure .bola {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 30px;
 }
 
 #slider .card #descricao {
@@ -197,8 +211,40 @@ figure .bola {
     background: hsl(30, 100%, 10%);
 }
 
+#chocolatudo strong {
+    color: hsl(30, 40%, 60%);;
+}
+
 #churros {
     background: hsl(40, 100%, 30%);
+}
+
+#churros strong {
+    color: hsl(40, 100%, 70%);
+}
+
+#cream-cheese {
+    background: hsl(60, 50%, 70%);
+}
+
+#cream-cheese strong {
+    color: hsl(50, 50%, 30%);
+}
+
+#pistache {
+    background: hsl(90, 40%, 70%);
+}
+
+#pistache strong {
+    color: hsl(90, 40%, 30%);
+}
+
+#red-velvet {
+    background: hsl(360, 70%, 70%);
+}
+
+#red-velvet strong {
+    color: hsl(360, 70%, 30%);
 }
 
 #chocolatudo, #churros {
