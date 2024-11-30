@@ -4,13 +4,17 @@
 
 * {
     font-family: "Poppins", serif;
+    scroll-behavior: smooth;
     margin: 0;
+}
+
+body {
+    background: hsl(40, 40%, 80%);
 }
 
 #sobre {
     color: #333;
 }
-
 
 /* -- TIAGO -- */
 
@@ -33,9 +37,11 @@ header {
 .logo figcaption {
     color: #7a5e3a;
     font-size: 6rem;
+    white-space: nowrap;
     margin: 0;
     font-family: "Rancho", cursive;
     font-weight: 400;
+    font-size: auto;
     margin: 15px;
 }
   
@@ -145,16 +151,32 @@ figure .bola {
     justify-content: center;
 }
 
-#whatsapp a i {
-    font-size: 50px;
-    transform: translateY(-10px);
+#whatsapp a svg {
+    height: 50px;
     color: #fff;
 }
 
 #slider {
     display: flex;
-    max-height: max-content;
+    min-height: 500px;
+    align-items: stretch;
     overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+#slider .congelado {
+    background: hsl(200, 100%, 50%);
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.arrows {
+    color: #fff;
+    height: 30px;
+    cursor: pointer;
 }
 
 #slider::-webkit-scrollbar {
@@ -169,18 +191,18 @@ figure .bola {
 }
 
 #slider .card {
-    height: 100%;
-    padding: 40px;
-    min-width: 90vw;
+    min-width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 100%;
+    justify-content: center;
+    align-self: stretch;
 }
 
-#slider .card div {
-    height: 100%;
+#slider .card #produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 #slider .card #cookie, #slider .card #descricao {
@@ -198,13 +220,50 @@ figure .bola {
     flex-grow: 1;
 }
 
+#slider .card #cookie figure {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+}
+
 #slider .card #cookie figure img {
-    height: 400px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
 #slider .card #cookie h1 {
     font-size: 30px;
+}
+
+#intro {
+    background: hsl(30, 40%, 80%);
+    color: #000 !important;
+}
+
+#intro h1, #card-whatsapp h1 {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro article, #card-whatsapp article {
+    margin: 15px;
+}
+
+#intro button, #card-whatsapp button {
+    padding: 12px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#intro button:hover, #card-whatsapp button:hover {
+    background: #ccc;
 }
 
 #chocolatudo {
@@ -247,7 +306,11 @@ figure .bola {
     color: hsl(360, 70%, 30%);
 }
 
-#chocolatudo, #churros {
+#card-whatsapp {
+    background: hsl(150, 100%, 40%);
+}
+
+#chocolatudo, #churros, #card-whatsapp {
     color: #fff;
 }
 
@@ -295,7 +358,7 @@ figure .bola {
 #social-links a {
     color: #fff;
     text-decoration: none;
-    margin: 5px;
+    margin: 5px 0;
     transition: all 0.5s;
 }
 
@@ -311,6 +374,10 @@ figure .bola {
     #sobre article {
         justify-content: center;
         max-width: 90%;
+    }
+
+    #slider .card #produto {
+        flex-direction: column;
     }
 
     header {

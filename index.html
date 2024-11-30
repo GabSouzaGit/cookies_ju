@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -10,7 +11,9 @@
     <body>
         <div id="whatsapp">
             <a href="https://api.whatsapp.com/send?phone=5511973042929" target="_blank">
-                <i class="bi bi-whatsapp"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
             </a>
         </div>
         <header>
@@ -64,82 +67,170 @@
             </section>
         </section>
         <section id="slider">
-            <section class="card" id="chocolatudo">
-                <div id="cookie">
-                    <figure>
-                        <img src="imgs/cookies/chocolatudo.jpeg" alt="Cookie Chocolatudo">
-                    </figure>
-                    <h1> Cookie Chocolatudo </h1>
-                    <strong> Preço: R$3,99 cada unidade </strong>
-                </div>
+            <section class="card" id="intro">
                 <div id="descricao">
-                    O Cookie Chocolatudo é a perfeita indulgência para os amantes de chocolate: uma 
-                    massa macia e assada com intensidade e aroma irresistíveis. Ele vem em versões 
-                    que agradam todos os paladares: recheado com cremosidade de Nutella, cacau 40% 
-                    para um sabor equilibrado, cacau 100% para os fãs de intensidade pura e chocolate 
-                    branco para um toque doce e suave. É mais que um cookie, é uma experiência chocolatuda! 🍫
+                    <h1> COOKIES DE VARIOS SABORES! 🍪👌 </h1>
+                    <article>
+                        Conheça alguns dos melhores cookies produzidos pela
+                        nossa cozinha!
+                    </article>
+                    <a href="#chocolatudo">
+                        <button> Conhecer variedades </button>
+                    </a>
                 </div>
+            </section>
+            <section class="card" id="chocolatudo">
+                <a href="#intro">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </a>
+                <div id="produto">
+                    <div id="cookie">
+                        <figure>
+                            <img src="imgs/cookies/chocolatudo.jpeg" alt="Cookie Chocolatudo">
+                        </figure>
+                        <h1> Cookie Chocolatudo </h1>
+                        <strong class="congelado"> Pacote congelado de 10 unidades: R$50.00 </strong>
+                        <strong> Assado (preço por unidade): R$8.00</strong>
+                    </div>
+                    <div id="descricao">
+                        O Cookie Chocolatudo é a perfeita indulgência para os amantes de chocolate: uma 
+                        massa macia e assada com intensidade e aroma irresistíveis. Ele vem em versões 
+                        que agradam todos os paladares. É mais que um cookie, é uma experiência chocolatuda! 🍫
+                    </div>
+                </div>
+                <a href="#churros">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>       
             </section>
             <section class="card" id="churros">
-                <div id="cookie">
-                    <figure>
-                        <img src="imgs/cookies/churros.jpeg" alt="Cookie de Churros">
-                    </figure>
-                    <h1> Cookie de Churros (doce de leite) </h1>
-                    <strong> Preço: R$3,99 cada unidade </strong>
+                <a href="#chocolatudo">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </a>
+                <div id="produto">
+                    <div id="cookie">
+                        <figure>
+                            <img src="imgs/cookies/churros.jpeg" alt="Cookie de Churros">
+                        </figure>
+                        <h1> Cookie de Churros (doce de leite) </h1>
+                        <strong class="congelado"> Pacote congelado de 10 unidades: R$50.00 </strong>
+                        <strong> Assado (preço por unidade): R$10.00</strong>
+                    </div>
+                    <div id="descricao">
+                        O Cookie de Churros é uma explosão de sabores clássicos em forma de cookie: massa 
+                        macia e dourada, que remete ao sabor do churros tradicional. O recheio cremoso de doce 
+                        de leite completa a experiência, trazendo um equilíbrio perfeito entre 
+                        doçura e nostalgia. Cada mordida é um convite para se deliciar! 🥐✨
+                    </div>
                 </div>
-                <div id="descricao">
-                    O Cookie de Churros é uma explosão de sabores clássicos em forma de cookie: massa 
-                    macia e dourada, que remete ao sabor do churros tradicional. O recheio cremoso de doce 
-                    de leite completa a experiência, trazendo um equilíbrio perfeito entre 
-                    doçura e nostalgia. Cada mordida é um convite para se deliciar! 🥐✨
-                </div>
+                <a href="#cream-cheese">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>  
             </section>
             <section class="card" id="cream-cheese">
-                <div id="cookie">
-                    <figure>
-                        <img src="imgs/cookies/cream_cheese.jpeg" alt="Cookie de Churros">
-                    </figure>
-                    <h1> Chocolate Branco com Cream Cheese </h1>
-                    <strong> Preço: R$3,99 cada unidade </strong>
+                <a href="#churros">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </a>
+                <div id="produto">
+                    <div id="cookie">
+                        <figure>
+                            <img src="imgs/cookies/cream_cheese.jpeg" alt="Cookie de Churros">
+                        </figure>
+                        <h1> Chocolate Branco com Cream Cheese </h1>
+                        <strong class="congelado"> Pacote congelado de 10 unidades: R$50.00 </strong>
+                        <strong> Assado (preço por unidade): R$8.00</strong>
+                    </div>
+                    <div id="descricao">
+                        O Cookie de Chocolate Branco com Cream Cheese é uma combinação 
+                        sofisticada e deliciosa. O contraste entre o doce suave e o toque levemente ácido do 
+                        recheio cria uma experiência única e irresistível em cada mordida. 🧀✨
+                    </div>
                 </div>
-                <div id="descricao">
-                    O Cookie de Chocolate Branco com Cream Cheese é uma combinação 
-                    sofisticada e deliciosa: uma massa delicada e dourada, repleta de 
-                    pedaços de chocolate branco, que envolve um recheio cremoso de cream 
-                    cheese. O contraste entre o doce suave e o toque levemente ácido do 
-                    recheio cria uma experiência única e irresistível em cada mordida. 🧀✨
-                </div>
+                <a href="#pistache">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>  
             </section>
             <section class="card" id="pistache">
-                <div id="cookie">
-                    <figure>
-                        <img src="imgs/cookies/pistache.jpeg" alt="Cookie de Churros">
-                    </figure>
-                    <h1> Cookie com Recheio de Pistache </h1>
-                    <strong> Preço: R$3,99 cada unidade </strong>
-                </div>
-                <div id="descricao">
-                    O Cookie de Pistache é uma verdadeira obra-prima para os paladares mais 
-                    exigentes: uma massa macia e levemente amanteigada, repleta de pedaços 
-                    crocantes de pistache, que trazem um sabor sofisticado e único. Perfeito 
-                    para quem busca um doce equilibrado, com um toque de elegância em cada mordida. 💚✨
-                </div>
+                <a href="#cream-cheese">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </a>   
+                <div id="produto">
+                    <div id="cookie">
+                        <figure>
+                            <img src="imgs/cookies/pistache.jpeg" alt="Cookie de Churros">
+                        </figure>
+                        <h1> Cookie com Recheio de Pistache </h1>
+                        <strong class="congelado"> Pacote congelado de 10 unidades: R$60.00 </strong>
+                        <strong> Assado (preço por unidade): R$10.00</strong>
+                    </div>
+                    <div id="descricao">
+                        O Cookie de Pistache é uma verdadeira obra-prima para os paladares mais 
+                        exigentes. Uma massa macia e levemente amanteigada, repleta de pedaços 
+                        crocantes de pistache, que trazem um sabor sofisticado e único. Perfeito
+                        para quem busca um doce equilibrado, com um toque de elegância em cada mordida.  💚✨
+                    </div>
+                </div>             
+                <a href="#red-velvet">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>  
             </section>
             <section class="card" id="red-velvet">
-                <div id="cookie">
-                    <figure>
-                        <img src="imgs/cookies/red_velvet.jpeg" alt="Cookie de Churros">
-                    </figure>
-                    <h1> Cookie Red Velvet </h1>
-                    <strong> Preço: R$3,99 cada unidade </strong>
+                <a href="#pistache">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </a>
+                <div id="produto">
+                    <div id="cookie">
+                        <figure>
+                            <img src="imgs/cookies/red_velvet.jpeg" alt="Cookie de Churros">
+                        </figure>
+                        <h1> Cookie Red Velvet </h1>
+                        <strong class="congelado"> Pacote congelado de 10 unidades: R$60.00 </strong>
+                        <strong> Assado (preço por unidade): R$10.00</strong>
+                    </div>
+                    <div id="descricao">
+                        O Cookie Red Velvet é pura elegância em forma de cookie. Uma 
+                        massa macia e vibrante, com o tom clássico vermelho aveludado, 
+                        que derrete na boca. Cada mordida é um presente para os sentidos! ❤️✨
+                    </div>
                 </div>
+                <a href="#card-whatsapp">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a> 
+            </section>
+            <section class="card" id="card-whatsapp">
+                <a href="#red-velvet">
+                    <svg class="arrows" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
+                </a>
                 <div id="descricao">
-                    O Cookie Red Velvet é pura elegância em forma de cookie: uma 
-                    massa macia e vibrante, com o tom clássico vermelho aveludado, 
-                    que derrete na boca. Para completar, pedaços de chocolate branco 
-                    dão o toque final, criando um equilíbrio perfeito entre doçura e 
-                    delicadeza. Cada mordida é um presente para os sentidos! ❤️✨
+                    <h1> SE INTERESSOU! 👀 </h1>
+                    <article>
+                        Entre em contato pelo nosso Whatsapp e
+                        faça o seu pedido!
+                    </article>
+                    <a href="https://api.whatsapp.com/send?phone=5511973042929">
+                        <button> Fazer pedido </button>
+                    </a>
                 </div>
             </section>
         </section>
